@@ -145,6 +145,11 @@ namespace GetWebPage
                     // Получим ответ на интернет-запрос
                     HttpWebResponse response = (HttpWebResponse)request.GetResponse();
                     // Возвращаем поток данных из полученного интернет-ресурса.
+
+                    /////Headers, Coockies, StatusCode
+
+
+
                     Stream stream = response.GetResponseStream();
 
                     MemoryStream ms = new MemoryStream();
