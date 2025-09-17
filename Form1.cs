@@ -17,7 +17,7 @@ namespace GetWebPage
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            await Task.Run(() =>
+            await Task.Run( () =>
             { 
                 try
                 {
@@ -30,7 +30,7 @@ namespace GetWebPage
                     HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(query /* URI, определяющий интернет-ресурс */);
 
                     // GetResponse возвращает ответ от интернет-ресурса.
-                    HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                    HttpWebResponse response = (HttpWebResponse)request.GetResponse();////блокуючий
 
                     // GetResponseStream возвращает поток, используемый для чтения основного текста ответа с сервера
                     StreamReader sr = new StreamReader(response.GetResponseStream(), Encoding.UTF8);
@@ -209,3 +209,9 @@ namespace GetWebPage
         
     }
 }
+
+//https://api.privatbank.ua
+
+//https://api.privatbank.ua/#p24/exchange
+
+//https://api.privatbank.ua/#p24/exchangeArchive

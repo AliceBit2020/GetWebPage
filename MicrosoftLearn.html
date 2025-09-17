@@ -282,7 +282,8 @@
 	
 
 			<!-- assets and js globals -->
-			<link rel="stylesheet" href="/static/assets/0.4.03104.6925-1dfb91e3/styles/site-ltr.css" />
+			
+			<link rel="stylesheet" href="/static/assets/0.4.03175.7109-61e2aea1/styles/site-ltr.css" />
 			<link rel="preconnect" href="//mscom.demdex.net" crossorigin />
 						<link rel="dns-prefetch" href="//target.microsoft.com" />
 						<link rel="dns-prefetch" href="//microsoftmscompoc.tt.omtrdc.net" />
@@ -388,7 +389,7 @@
 	</script>
 
 			<!-- base scripts, msdocs global should be before this -->
-			<script src="/static/assets/0.4.03104.6925-1dfb91e3/scripts/ru-ru/index-docs.js"></script>
+			<script src="/static/assets/0.4.03175.7109-61e2aea1/scripts/ru-ru/index-docs.js"></script>
 			
 
 			<!-- json-ld -->
@@ -550,7 +551,7 @@
 				aria-controls="action-panel"
 			>
 				<span class="icon" aria-hidden="true"><span class="docon docon-exit-mode"></span></span>
-				<span>Выйти из режима фокусировки</span>
+				<span>Exit editor mode</span>
 			</button>
 		</div>
 	</div>
@@ -599,11 +600,11 @@
 			hidden
 		>
 			<span class="icon font-size-lg" aria-hidden="true">
-				<span class="docon docon-chat-sparkle gradient-ask-learn-logo"></span>
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
 			</span>
 		</button>
 		<button
-			class="button button-sm display-none display-inline-flex-tablet display-none-desktop flex-shrink-0 margin-right-xxs "
+			class="button button-sm display-none display-inline-flex-tablet display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn "
 			data-bi-name="ask-learn-assistant-entry"
 			data-test-id="ask-learn-assistant-modal-entry-tablet"
 			data-ask-learn-modal-entry
@@ -613,12 +614,12 @@
 			hidden
 		>
 			<span class="icon font-size-lg" aria-hidden="true">
-				<span class="docon docon-chat-sparkle gradient-ask-learn-logo"></span>
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
 			</span>
 			<span>Спросить Learn</span>
 		</button>
 		<button
-			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs	 "
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs	border-color-ask-learn "
 			data-bi-name="ask-learn-assistant-entry"
 			data-test-id="ask-learn-assistant-flyout-entry"
 			data-ask-learn-flyout-entry
@@ -630,9 +631,22 @@
 			hidden
 		>
 			<span class="icon font-size-lg" aria-hidden="true">
-				<span class="docon docon-chat-sparkle gradient-ask-learn-logo"></span>
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
 			</span>
 			<span>Спросить Learn</span>
+		</button>
+	 
+		<button
+			type="button"
+			id="ms--focus-mode-button"
+			data-focus-mode
+			data-bi-name="focus-mode-entry"
+			class="button button-sm flex-shrink-0 margin-right-xxs display-none display-inline-flex-desktop"
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-glasses"></span>
+			</span>
+			<span>Focus mode</span>
 		</button>
 	 
 		<div class="language dropdown display-flex align-items-center">
@@ -848,11 +862,8 @@
 	
 			</div>
 		</div>
-	
-					<!-- azure disclaimer -->
-					
-					<!-- privateUnauthorizedTemplate is hidden by default -->
-					
+	  
+		<!-- privateUnauthorizedTemplate is hidden by default -->
 		<div unauthorized-private-section data-bi-name="permission-content-unauthorized-private" hidden>
 			<hr class="hr margin-top-xs margin-bottom-sm" />
 			<div class="notification notification-info">
@@ -1502,7 +1513,9 @@
 		>
 			<h3>В этой статье</h3>
 		</nav>
-	 
+	
+				<!-- Feedback -->
+				
 		<section
 			id="ms--site-user-feedback-right-rail"
 			class="font-size-sm display-none-print"
@@ -1542,33 +1555,6 @@
 			</div>
 		</section>
 	
-				<div id="ms--additional-resources-container">
-					<h2 id="ms--additional-resources-heading" class="title is-6 margin-top-xxs" hidden>
-						Дополнительные ресурсы
-					</h2>
-					
-		<section
-			id="right-rail-events"
-			class=""
-			data-bi-name="events-card"
-			hidden
-		></section>
-	 
-		<section
-			id="right-rail-training"
-			class=""
-			data-bi-name="learning-resource-card"
-			hidden
-		></section>
-	  
-		<section
-			id="right-rail-qna"
-			class="margin-top-xxs"
-			data-bi-name="qna-link-card"
-			hidden
-		></section>
-	
-				</div>
 			</div>
 		</div>
 	
